@@ -1,0 +1,169 @@
+.about-page {
+    padding: 2rem 0;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #2c5f2d, #4a7c59);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c5f2d;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+.values-section {
+    margin-bottom: 4rem;
+}
+.values-content h2{
+    display: block;
+    text-align: center;
+    color: #2c5f2d;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.value-card i {
+    font-size: 3rem;
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.team-section {
+    margin-bottom: 4rem;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #2c5f2d;
+}
+.team-section p strong{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.member-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1.5rem;
+}
+
+.member-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.member-role {
+    color: #2c5f2d;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.member-details {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.member-details p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.member-details strong {
+    color: #333;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.member-social a {
+    color: #666;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.member-social a:hover {
+    color: #2c5f2d;
+}
+

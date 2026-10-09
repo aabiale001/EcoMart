@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrabNGo - Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/blog.css">
+    <style>
+        .blog-page {
+            padding: 2rem 0;
+        }
+        
+        .blog-hero {
+            background: linear-gradient(135deg, #2c5f2d, #4a7c59);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .blog-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .blog-content h3 {
+            margin-bottom: 1rem;
+            color: #333;
+            font-size: 1.3rem;
+        }
+        
+        .blog-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: #2c5f2d;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+        
+        .read-more:hover {
+            gap: 1rem;
+        }
+        
+        .featured-post {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .featured-post .blog-image {
+            height: auto;
+        }
+        
+        .featured-post .blog-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .tech-impact-section {
+            background: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .tech-impact-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .tech-impact-content h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .impact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .impact-contents{
+            display: flex;
+            flex-direction: row;
+        }
+        .impact-card i {
+            font-size: 3rem;
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+        }
+        
+        .impact-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .impact-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <!-- Div for logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="Image/WebLogo/1-6967cf211b60d_weblogo__Balanced.png" alt="WebLogo"></a>
+                </div>
+                <!-- Navigation bar with nav tag -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><strong>Home</strong></a></li>
+                        <li><a href="product.html"><strong>Product</strong></a></li>
+                        <li><a href="blog.html"><strong>Blog</strong></a></li>
+                        <li><a href="research.html"><Strong>Research</Strong></a></li>
+                        <li><a href="aboutus.html"><strong>About us</strong></a></li>
+                        <li><a href="contactus.html"><strong>Contact us</strong></a></li>
+                    </ul>
+                </nav>
+                <!-- Icons for header - search, profile and cart         -->
+                <div class="header-icons">
+                    <i class="bx bx-search"></i>
+                    <i class="bx bx-user"></i>
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <h1>The Impact of Technology on Daily Life and Business</h1>
+                <p>Exploring how technological advancements are reshaping our world, from sustainable living to modern business practices</p>
+            </div>
+        </section>
+
+        <!-- Technology Impact Section -->
+        <section class="tech-impact-section">
+            <div class="container">
+                <div class="tech-impact-content">
+                    <h2>How Technology Transforms Our World</h2>
+                    <p>Technology has revolutionized every aspect of our lives, from how we communicate and work to how we shop and consume. At GrabNGo, we embrace technology to promote sustainability and enhance customer experience.</p>
+                    
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <i class='bx bx-recycle'></i>
+                            <h3>Sustainable Living</h3>
+                            <p>Smart home technologies and IoT devices help monitor energy consumption, reduce waste, and promote eco-friendly lifestyles.</p>
+                        </div>
+                        <div class="impact-card">
+                            <i class='bx bx-shopping-bag'></i>
+                            <h3>E-Commerce Revolution</h3>
+                            <p>Online shopping platforms have transformed retail, offering convenience, variety, and access to sustainable products globally.</p>
+                        </div>
+                        <div class="impact-card">
+                            <i class='bx bx-leaf'></i>
+                            <h3>Green Technology</h3>
+                            <p>Renewable energy solutions and sustainable manufacturing processes are reducing our environmental footprint.</p>
+                        </div>
+                        <div class="impact-card">
+                            <i class='bx bx-mobile-alt'></i>
+                            <h3>Digital Transformation</h3>
+                            <p>Mobile apps and digital platforms make sustainable choices more accessible and convenient for everyday consumers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section class="blog-page">
+            <div class="container">
+                <!-- Featured Post -->
+                <article class="featured-post blog-card">
+                    <div class="blog-image">
+                        <img src="Image/WebLogo/1-6967cf211b60d_weblogo__Balanced.png" alt="Technology Impact">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class='bx bx-calendar'></i> December 29, 2025</span>
+                            <span><i class='bx bx-user'></i> GrabNGo Team</span>
+                            <span><i class='bx bx-time'></i> 5 min read</span>
+                        </div>
+                        <h3>The Future of Sustainable E-Commerce</h3>
+                        <p>As we move towards a more digital world, e-commerce platforms are evolving to meet the growing demand for sustainable products. From AI-powered recommendations to blockchain supply chain transparency, technology is enabling businesses to offer eco-friendly alternatives while maintaining efficiency and customer satisfaction.</p>
+                        <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Grid -->
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="Image/Gemini_Generated_Image_9gfq8b9gfq8b9gfq.png" alt="Smart Home Technology">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> December 25, 2025</span>
+                                <span><i class='bx bx-time'></i> 3 min read</span>
+                            </div>
+                            <h3>Smart Home Solutions for Energy Conservation</h3>
+                            <p>Discover how IoT devices and smart home technology can help reduce your carbon footprint while saving money on utility bills.</p>
+                            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="Image/Gemini_Generated_Image_dljxuudljxuudljx.png" alt="Digital Marketing">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> December 20, 2025</span>
+                                <span><i class='bx bx-time'></i> 4 min read</span>
+                            </div>
+                            <h3>Digital Marketing Strategies for Sustainable Brands</h3>
+                            <p>Learn how eco-friendly businesses can leverage digital marketing to reach conscious consumers and build brand loyalty.</p>
+                            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="Image/Gemini_Generated_Image_p63ed3p63ed3p63e.png" alt="Blockchain Technology">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> December 15, 2025</span>
+                                <span><i class='bx bx-time'></i> 6 min read</span>
+                            </div>
+                            <h3>Blockchain in Supply Chain Transparency</h3>
+                            <p>Explore how blockchain technology is revolutionizing supply chain management, ensuring transparency and sustainability in product sourcing.</p>
+                            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="Image/Gemini_Generated_Image_yao52jyao52jyao5.png" alt="Renewable Energy">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> December 10, 2025</span>
+                                <span><i class='bx bx-time'></i> 5 min read</span>
+                            </div>
+                            <h3>Renewable Energy Technologies for Small Businesses</h3>
+                            <p>Practical guide for small businesses looking to adopt renewable energy solutions and reduce their environmental impact.</p>
+                            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="Image/Gemini_Generated_Image_yao52jyao52jyao5.png" alt="AI and Sustainability">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> December 5, 2025</span>
+                                <span><i class='bx bx-time'></i> 7 min read</span>
+                            </div>
+                            <h3>AI-Powered Solutions for Environmental Monitoring</h3>
+                            <p>How artificial intelligence is being used to track environmental changes, predict climate patterns, and optimize resource usage.</p>
+                            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="Image/Gemini_Generated_Image_tyozprtyozprtyoz.png" alt="Mobile Apps">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class='bx bx-calendar'></i> November 30, 2025</span>
+                                <span><i class='bx bx-time'></i> 4 min read</span>
+                            </div>
+                            <h3>Mobile Apps Promoting Sustainable Lifestyles</h3>
+                            <p>Review of top mobile applications that help users adopt eco-friendly habits and make sustainable choices in daily life.</p>
+                            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Bottles</a></li>
+                        <li><a href="#">Kitchen Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Info</h3>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Shipping policy</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Our mission</h3>
+                    <p>Quality materials, good designs, craftsmanship and sustainability.</p>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <h3>Subscribe to our emails</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Social and Payment -->
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-youtube'></i>
+                    <i class='bx bx-hash'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+                <div class="country-selector">
+                    <select>
+                        <option>Nepal</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                    </select>
+                </div>
+                <div class="payment-icons">
+                    <i class='bx bxl-visa'></i>
+                    <i class='bx bxl-mastercard'></i>
+                    <i class='bx bxl-amex'></i>
+                    <i class='bx bxl-paypal'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

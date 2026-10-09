@@ -1,0 +1,170 @@
+.research-page {
+    padding: 2rem 0;
+}
+
+.research-hero {
+    background: linear-gradient(135deg, #2c5f2d, #4a7c59);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.research-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.research-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Methodology section */
+.methodology-section {
+    margin-bottom: 4rem;
+}
+
+.methodology-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.methodology-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.methodology-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+.comparison-section {
+    margin-bottom: 4rem;
+}
+
+.comparison-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.comparison-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    background: #2c5f2d;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+.comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+.comparison-table tr:hover {
+    background: #f8f9fa;
+}
+/* Analysis section */
+.analysis-section {
+    margin-bottom: 4rem;
+}
+
+.analysis-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.analysis-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.analysis-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.analysis-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c5f2d;
+}
+
+.analysis-card p {
+    color: #666;
+    line-height: 1.6;
+}
+.conclusions-section {
+    margin-bottom: 4rem;
+}
+
+.conclusions-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conclusions-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.conclusions-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.key-findings {
+    background: #f0f8f0;
+    border-left: 4px solid #2c5f2d;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.key-findings h3 {
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+.key-findings ul {
+    text-align: left;
+    color: #333;
+}
+
+.key-findings li {
+    margin-bottom: 0.5rem;
+}
+

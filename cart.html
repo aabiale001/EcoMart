@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrabNGo - Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Image/WebLogo/1-6967cf211b60d_weblogo__Balanced.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <i class='bx bx-search'></i>
+                <i class='bx bx-user'></i>
+                <i class='bx bx-shopping-bag'></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-hero">
+            <div class="container">
+                <h1>Your Cart</h1>
+                <p>Review your items and proceed to checkout</p>
+            </div>
+        </section>
+
+
+        <section class="cart-page">
+            <div class="container">
+                <div class="cart-content">
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="Image/Water bottle.jpg" alt="Bamboo Bottle 400ML">
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-name">Bamboo Bottle 400ML</div>
+                                <div class="cart-item-price">NPR. 1300</div>
+                                <div class="quantity-controls">
+                                    <input type="number" class="quantity-input" value="1" min="1" placeholder="Number of items">
+                                </div>
+                            </div>
+                            <div class="cart-item-actions">
+                                <div class="cart-item-price">NPR. 1300</div>
+                                <button class="remove-btn">
+                                    <i class='bx bx-trash'></i>-
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="Image/Mug.webp" alt="Bamboo Mug Set">
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-name">Bamboo Mug Set</div>
+                                <div class="cart-item-price">NPR. 1900</div>
+                                <div class="quantity-controls">
+                                    <input type="number" class="quantity-input" value="1" min="1" placeholder="Number of items">
+                                </div>
+                            </div>
+                            <div class="cart-item-actions">
+                                <div class="cart-item-price">NPR. 1900</div>
+                                <button class="remove-btn">
+                                    <i class='bx bx-trash'></i>-
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="continue-shopping">
+                            <a href="./product.html">← Continue Shopping</a>
+                        </div>
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <div class="cart-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>NPR. 3200</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>NPR. 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>NPR. 416</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>NPR. 3616</span>
+                        </div>
+                        
+                        <button class="checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+
+                <!-- Related Products -->
+                <div class="related-products">
+                    <h2>You may also like</h2>
+                    <div class="related-grid">
+                        <div class="related-card">
+                            <div class="related-image">
+                                <img src="Image/Water bottle.jpg" alt="Bamboo Bottle 400ML">
+                            </div>
+                            <div class="related-content">
+                                <h3>Bamboo Bottle 400ML</h3>
+                                <div class="related-price">NPR. 1300</div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                        
+                        <div class="related-card">
+                            <div class="related-image">
+                                <img src="Image/cotton_tote_bag_packshot.webp" alt="Shopping Organic Tote Bags">
+                            </div>
+                            <div class="related-content">
+                                <h3>Shopping Organic Tote Bags</h3>
+                                <div class="related-price">NPR. 1200</div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                        
+                        <div class="related-card">
+                            <div class="related-image">
+                                <img src="Image/ETB.webp" alt="Loofah">
+                            </div>
+                            <div class="related-content">
+                                <h3>Loofah</h3>
+                                <div class="related-price">NPR. 150</div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Bottles</a></li>
+                        <li><a href="#">Kitchen Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Info</h3>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Shipping policy</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Our mission</h3>
+                    <p>Quality materials, good designs, craftsmanship and sustainability.</p>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <h3>Subscribe to our emails</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">
+                        <i class='bx bx-right-arrow-alt'>.</i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Social and Payment -->
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-youtube'></i>
+                    <i class='bx bx-hash'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+                <div class="country-selector">
+                    <select>
+                        <option>Nepal</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                    </select>
+                </div>
+                <div class="payment-icons">
+                    <i class='bx bxl-visa'></i>
+                    <i class='bx bxl-mastercard'></i>
+                    <i class='bx bxl-amex'></i>
+                    <i class='bx bxl-paypal'></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
